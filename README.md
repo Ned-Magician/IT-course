@@ -1,6 +1,6 @@
 # :computer: IT Course :man_technologist:
 
-- This IT page is user-friendly with a clear visual design.
+- This IT cours landing page is user-friendly with a clear visual design.
 - This landing page uses `HTML, CSS, JavaScript, Bootstrap, scss and GULP.`
 - Smooth scroll.
 - It's beautiful in terms of UX and makes the code compile easily.
