@@ -1,0 +1,112 @@
+//Header style
+#header {
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(224, 224, 224, 1) 50%,
+    rgba(247, 247, 247, 1) 100%
+  );
+  width: 100%;
+  @include margin-padding(100px, 0, 0, 0);
+  @include margin-padding(15px, 0, 15px, 0px, false);
+  @include flex(flex, space, flex-start);
+  .right {
+    position: relative;
+    @include section-divider(flex, 67%, 67%);
+    .gear-1 {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      font-size: $defalut-font-size + 24px;
+      color: rgb(107, 107, 107);
+      animation: gear-1 13s infinite linear;
+    }
+    @keyframes gear-1 {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .gear-2 {
+      position: absolute;
+      top: 0;
+      left: 2px;
+      font-size: $defalut-font-size + 10px;
+      color: rgb(78, 78, 78);
+      animation: gear-2 13s infinite linear;
+    }
+    @keyframes gear-2 {
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    .sq-1 {
+      @include position-ab(absolute, 0, 80px, null, null);
+      width: 20px;
+      height: 20px;
+      border: 4px solid #efefef;
+      animation: sq-1 15s infinite linear;
+    }
+    @keyframes sq-1 {
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    .sq-2 {
+      @include position-ab(absolute, 0, 130px, -20px, null);
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ff7873;
+      animation: sq-1 15s infinite linear;
+    }
+    @keyframes sq-2 {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .sq-3 {
+      @include position-ab(absolute, null, 0, 0, 80px);
+      width: 30px;
+      height: 30px;
+      border: 4px solid #adaf65;
+      animation: sq-1 10s infinite linear;
+    }
+    @keyframes sq-3 {
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+  .left {
+    @include section-divider(flex, 44%, 27%);
+    @include margin-padding(13%, 0, 0, 0, true);
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgb(56, 55, 55) 0%,
+      rgb(74, 3, 124) 50%,
+      rgb(97, 90, 9) 100%
+    );
+    border-radius: $bdr-5;
+    @include margin-padding(2%, 0, 2%, 2%, false);
+    h1 {
+      font-size: $defalut-font-size + 18px;
+      background: -webkit-linear-gradient(
+        rgb(255, 255, 255),
+        rgb(248, 125, 125)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include margin-padding(0, 0, 30px, 0);
+    }
+    p {
+      font-weight: 700;
+      font-size: $defalut-font-size + 16px;
+      background: -webkit-linear-gradient(#eee, rgb(255, 255, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

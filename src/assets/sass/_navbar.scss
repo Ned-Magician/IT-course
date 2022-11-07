@@ -1,0 +1,55 @@
+//Menu style
+#nav {
+  border-radius: 15% / 33%;
+  overflow: hidden;
+  .navbar {
+    background-color: $bg-nav;
+    font-size: $defalut-font-size;
+    height: 60px;
+    @include margin-padding(24px, 0, 24px, 0);
+    @include flex(flex, space-between, null);
+    ul {
+      li {
+        display: inline-block;
+        line-height: 60px;
+        font-weight: bold;
+        @include margin-padding(0, 0, 0, 15px);
+        position: relative;
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: rgb(54, 144, 228);
+          transition: width 0.5s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+        &:hover a {
+          color: $nav-link-hover;
+        }
+        a {
+          color: $nav-link;
+          transition: width 2.8s ease;
+        }
+      }
+    }
+    .social-icon {
+      @include margin-padding(15px, 15px, 0, 0, false);
+      a {
+        @include margin-padding(0, 4px, 0, 4px, true);
+        color: $social-icons-color;
+        transition: color 0.5s ease;
+        font-size: 28px;
+        &:hover {
+          color: $social-icons-hover-color;
+        }
+      }
+    }
+  }
+}

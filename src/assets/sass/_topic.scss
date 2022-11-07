@@ -1,0 +1,93 @@
+@import "mixin";
+//topic style
+#topic {
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    background: rgba(140, 124, 229, 0.2);
+    width: 200px;
+    content: "";
+    bottom: 90px;
+    left: -332px;
+    height: 250px;
+    transform: skewX(10deg);
+    @include border-radius(0, 20px, 20px, 0);
+  }
+  &::after {
+    bottom: 149px;
+    left: -440px;
+  }
+  .topic-title {
+    font-size: $defalut-font-size + 10px;
+    margin-bottom: 50px;
+    border-left: 5px solid red;
+    @include margin-padding(0, 0, 0, 10px, false);
+  }
+  .topic {
+    @include flex(flex, space-between, null);
+    @include margin-padding(0, 0, 20px, 0);
+    .card {
+      @include section-divider(flex, 49%, 49%);
+      border: 1px solid #efefef;
+      @include border-radius(3px, 3px, 3px, 3px);
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      &:hover .topic-img::after {
+        opacity: 0.7;
+      }
+      .topic-img {
+        @include section-divider(flex, 30%, 30%);
+        overflow: hidden;
+        position: relative;
+        cu &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+      }
+      .topic-detail {
+        position: relative;
+        @include section-divider(flex, 70%, 70%);
+        flex-direction: column;
+        @include margin-padding(22px, 22px, 22px, 22px, false);
+        &::after {
+          content: "";
+          width: 40px;
+          height: 110%;
+          background-color: white;
+          position: absolute;
+          top: 0px;
+          left: -27px;
+          transform: rotate(7deg);
+        }
+        a {
+          font-size: $defalut-font-size + 2px;
+        }
+        .meta {
+          font-size: $defalut-font-size - 4px;
+          margin-top: 15px;
+          color: #ccc;
+          span {
+            margin-left: 16px;
+          }
+        }
+        p {
+          font-size: $defalut-font-size - 2px;
+          margin-top: 20px;
+          line-height: 30px;
+          color: #757575;
+        }
+      }
+    }
+  }
+}

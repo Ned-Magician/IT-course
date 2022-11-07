@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+//Public
+.container {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+}
+.row {
+  @include flex(flex, center, null);
+  width: 100%;
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mt-100 {
+  margin-top: 100px;
+}
