@@ -1,17 +1,15 @@
-# Insurance :health_worker:
+# :computer: IT Course :man_technologist:
 
-- This insurans landing page is user-friendly with a clear visual design.
-- It's ONLY has used `HTML, CSS.`
+- This IT page is user-friendly with a clear visual design.
+- This landing page uses `HTML, CSS, JavaScript, Bootstrap, scss and GULP.`
 - Smooth scroll.
 - It's beautiful in terms of UX and makes the code compile easily.
-- Simulation of Bootstrap's Classes, Roots, and grids without using Bootstrap.
-- Fully responsive by the grit system I've built.
+- Fully responsive.
 ---
 _Screenshots:_
 - Home page
-![Insurance-Pics](https://github.com/Ned-Magician/Insurance/blob/main/Insurance/1.JPG)
-- _Card section with smoth card_
-![Insurance-Pics](https://github.com/Ned-Magician/Insurance/blob/main/Insurance/3.JPG)
-![Insurance-Pics](https://github.com/Ned-Magician/Insurance/blob/main/Insurance/4.JPG)
+![IT Course-Pics](https://github.com/Ned-Magician/IT-course/blob/main/IT-course/1.JPG)
+- _Card section with smoth animation and transitions_
+![IT Course-Pics](https://github.com/Ned-Magician/IT-course/blob/main/IT-course/2.JPG)
 - _Footer_
-![Insurance-Pics](https://github.com/Ned-Magician/Insurance/blob/main/Insurance/5.JPG)
+![IT Course-Pics](https://github.com/Ned-Magician/IT-course/blob/main/IT-course/3.JPG)
